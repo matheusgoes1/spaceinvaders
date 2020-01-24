@@ -1,0 +1,16 @@
+Algumas considerações sobre o game design
+
+Jogo inspirado no Space Invaders.
+A essência do jogo foi mantida, com uma nave tentando combater os inimigos. O boss possui uma mini IA e apresenta 2 mecânicas.
+
+Boss:
+Modo defesa: Foge do jogador, maior velocidade, recebe menos dano e menor taxa de disparo.
+Modo ataque:Persegue o jogador e o suga para mais perto, menor velocidade, recebe mais dano e maior taxa de disparo.
+
+Alguns pontos para destacar:
+-Cada linha horizontal de inimigos se movimentam de forma uniforme. 
+-Cada tipo de nave possui ao menos a taxa de disparo diferente, podendo variar a velocidade também.
+-Foi retirado a mecânica de blocos que protegem a nave do jogador dos tiros. 
+-A quantidade de inimigos é menor.
+
+Para resolver esses pontos e balancear o jogo, foi optado por o jogador ter um “delay” para executar o próximo disparo. Além disso, cada linha de inimigos executa um disparo em, poucos segundos (1 ou 2), isso faz com que o tempo para o jogador atirar novamente sirva para que ele desvie dos tiros inimigos, ou seja, isso dá velocidade ao jogo.
